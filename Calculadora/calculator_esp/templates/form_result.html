@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../static/css/style.css"> 
+  <title>Resultado del formulario</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__text">
+      <h1>Gracias por contactarnos, {{ name }}!</h1>
+      <p>Estos son los datos que nos proporcionó:</p>
+    </div>
+  </header>
+  <main>
+    <ul class="user-data">
+      <li><strong>Nombre:</strong> {{ name }}</li>
+      <li><strong>Correo:</strong> {{ email }}</li>
+      <li><strong>Dirección:</strong> {{ address }}</li>
+      <li><strong>Fecha solicitada:</strong> {{ date }}</li>
+    </ul>
+    <p>Nos pondremos en contacto con usted pronto para coordinar la visita.</p>
+  </main>
+  <footer></footer>
+</body>
+</html>
